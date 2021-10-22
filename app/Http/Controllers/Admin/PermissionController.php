@@ -90,4 +90,14 @@ public function __construct()
         return redirect()->route('admin.permission.edit.ui', $id)->with('success','Data Perizinan Berhasil Diupdate');
     }
 
+    public function detail($id)
+    {
+        $permission = Permission::where('id', '=', $id)->first();
+        $conditionPermission = $permission->condition_permission()->get();
+        $stepPermission = $permission->step_permission()->get();
+        $formPermission = $permission->form_permission()->get();
+        
+        return view('admin.permission.detail', ['permissions' => $permission, 'condition' => $conditionPermission, 'step' => $stepPermission, 'form' => $formPermission]);
+    }
+
 }

@@ -38,8 +38,18 @@ class Role
             if ($route->named('admin.permission.form.ui')) return $next($request);
             if ($route->named('admin.permission.form')) return $next($request);
             if ($route->named('admin.permission.delete')) return $next($request);
+            if ($route->named('admin.permission.detail.ui')) return $next($request);
             if ($route->named('admin.permission.edit.ui')) return $next($request);
             if ($route->named('admin.permission.update.permission')) return $next($request);
+
+            //ADMIN GALLERY
+            if ($route->named('admin.gallery.ui')) return $next($request);
+            if ($route->named('admin.gallery.form')) return $next($request);
+            if ($route->named('admin.gallery.detail.ui')) return $next($request);
+            if ($route->named('admin.gallery.delete')) return $next($request);
+            if ($route->named('admin.gallery.edit.ui')) return $next($request);
+            if ($route->named('admin.gallery.update')) return $next($request);
+
         } elseif ($role == 'user') {
             if ($route->named('user.ui')) return $next($request);
         } 

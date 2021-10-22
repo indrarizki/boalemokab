@@ -28,7 +28,7 @@
                                         <td class="text-center"> {{$permissions->duration}} Hari</td>
                                         <td class="text-center"> {{$permissions->cost}} </td>
                                         <td class="text-center"> 
-                                            <a href="#" class="btn btn-primary btn-sm"><i class=""></i> Detail</a>
+                                            <a href="{{route('admin.permission.detail.ui', $permissions->id)}}" class="btn btn-primary btn-sm"><i class=""></i> Detail</a>
                                             <a href="{{route('admin.permission.edit.ui', $permissions->id)}}" class="btn btn-secondary btn-sm"><i class=""></i> Edit</a>
                                         </td>
                                         <td>

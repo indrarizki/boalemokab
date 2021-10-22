@@ -32,7 +32,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/welcome', 'VisitorsController@welcome')->name('visitor.ui');
-
+Route::get('/welcome/test', 'VisitorsController@test')->name('visitor.test.ui');
 //ROUTE ADMIN
 Route::get('/admin', 'Admin\AdminController@index')->name('admin.ui');
 
@@ -52,3 +52,12 @@ Route::post('admin/permission/form', 'Admin\PermissionController@form_create')->
 Route::delete('/admin/permission/{id}', 'Admin\PermissionController@delete')->name('admin.permission.delete');
 Route::get('/admin/permission/edit/{id}', 'Admin\PermissionController@edit')->name('admin.permission.edit.ui');
 Route::put('/admin/permission/update_permission/{id}', 'Admin\PermissionController@update_permission')->name('admin.permission.update.permission');
+Route::get('/admin/permission/detail/{id}', 'Admin\PermissionController@detail')->name('admin.permission.detail.ui');
+
+#ROUTE ADMIN PHOTO GALLERY
+Route::get('/admin/gallery', 'Admin\PhotoGalleryController@show')->name('admin.gallery.ui');
+Route::post('/admin/gallery/form', 'Admin\PhotoGalleryController@form_create')->name('admin.gallery.form');
+Route::get('/admin/gallery/detail/{id}', 'Admin\PhotoGalleryController@detail')->name('admin.gallery.detail.ui');
+Route::delete('/admin/gallery/{id}', 'Admin\PhotoGalleryController@delete')->name('admin.gallery.delete');
+Route::get('/admin/gallery/edit/{id}', 'Admin\PhotoGalleryController@edit')->name('admin.gallery.edit.ui');
+Route::put('/admin/gallery/update/{id}', 'Admin\PhotoGalleryController@update')->name('admin.gallery.update');
