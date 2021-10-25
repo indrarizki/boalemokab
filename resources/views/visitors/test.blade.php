@@ -37,7 +37,7 @@
         </div>
       </header>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      {{-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="collapse navbar-collapse py-2 mb-2">
               <ul class="nav d-flex justify-content-center">
                   <li class="nav-item ">
@@ -48,7 +48,7 @@
                       TENTANG KAMI
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="{{route('visitor.test.ui')}}">SAMBUTAN</a>
+                      <a class="dropdown-item" href="#">SAMBUTAN</a>
                       <a class="dropdown-item" href="#">VISI MISI</a>
                       <a class="dropdown-item" href="#">TUGAS DAN FUNGSI</a>
                       <a class="dropdown-item" href="#">STRUKTUR ORGANISASI</a>
@@ -58,7 +58,7 @@
                   </li>
               </ul>
         </div>
-      </nav>
+      </nav> --}}
 
       <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
         <div class="col-md-6 px-0">

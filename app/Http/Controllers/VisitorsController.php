@@ -6,13 +6,14 @@ use Illuminate\Http\Request;
 
 class VisitorsController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('role');
-    }
 
-    public function index(){
+    public function welcome(){
 
         return view('visitors.index');
+    }
+
+    public function test(){
+
+        return view('visitors.test');
     }
 }
