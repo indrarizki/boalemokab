@@ -50,6 +50,22 @@ class Role
             if ($route->named('admin.gallery.edit.ui')) return $next($request);
             if ($route->named('admin.gallery.update')) return $next($request);
 
+            //ADMIN NEWS
+            if ($route->named('admin.news.ui')) return $next($request);
+            if ($route->named('admin.news.form')) return $next($request);
+            if ($route->named('admin.news.detail.ui')) return $next($request);
+            if ($route->named('admin.news.delete')) return $next($request);
+            if ($route->named('admin.news.edit.ui')) return $next($request);
+            if ($route->named('admin.news.update')) return $next($request);
+
+            //ADMIN PUBLICATION
+            if ($route->named('admin.publication.ui')) return $next($request);
+            if ($route->named('admin.publication.form')) return $next($request);
+            if ($route->named('admin.publication.detail.ui')) return $next($request);
+            if ($route->named('admin.publication.delete')) return $next($request);
+            if ($route->named('admin.publication.edit.ui')) return $next($request);
+            if ($route->named('admin.publication.update')) return $next($request);
+
         } elseif ($role == 'user') {
             if ($route->named('user.ui')) return $next($request);
         } 

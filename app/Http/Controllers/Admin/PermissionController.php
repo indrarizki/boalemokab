@@ -65,8 +65,8 @@ public function __construct()
     public function delete($id)
     {
         $permission = Permission::findOrFail($id);
-        $image_path = public_path().'/Permission'.'/'.$permission->photo;
-        unlink($image_path);
+        $file_path = public_path().'/Permission'.'/'.$permission->file;
+        unlink($file_path);
         $permission->delete();
         return redirect()->route('admin.permission.ui')->with('success','Data Berhasil Dihapus');
     }

@@ -38,12 +38,12 @@
                 </ul>
             </li>
             <li class="c-sidebar-nav-item">
-                <a class="c-sidebar-nav-link" href="#">
+                <a class="c-sidebar-nav-link" href="{{route('admin.news.ui')}}">
                     <i class="c-sidebar-nav-icon cil-newspaper"></i>Berita
                 </a>
             </li>
             <li class="c-sidebar-nav-item">
-                <a class="c-sidebar-nav-link" href="#">
+                <a class="c-sidebar-nav-link" href="{{route('admin.publication.ui')}}">
                     <i class="c-sidebar-nav-icon cil-library"></i>Publikasi
                 </a>
                 <ul class="c-sidebar-nav-dropdown-items">
@@ -64,7 +64,7 @@
                     <i class="c-sidebar-nav-icon cil-image-plus"></i>Galeri Foto
                 </a>
             </li>
-            <li class="c-sidebar-nav-dropdown">
+            {{-- <li class="c-sidebar-nav-dropdown">
                 <a class="c-sidebar-nav-dropdown-toggle" href="#">
                     <i class="c-sidebar-nav-icon cil-settings"></i>Pengaturan
                 </a>
@@ -95,7 +95,7 @@
                         </a>
                     </li>
                 </ul>
-            </li>   
+            </li>    --}}
         </ul>
         
         <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
