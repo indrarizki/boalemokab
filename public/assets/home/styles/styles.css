@@ -1,6 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+:root{
+  --customgreen1 : #339e94;
+  --customgreen2 : #6bae78;
+  --customgreen3 : #88b76a;
+}
+body{
+  font-family: 'Zen Old Mincho', serif;
+}
+.bg-custom-green{
+  background: linear-gradient(to right,var(--customgreen1), var(--customgreen2), var(--customgreen3));
+}
+
 .bg-dashboard{
     background-image: url("../images/bg-menu.jpg") !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-  }
+}
+.icon-2{
+  width: 2em;
+  height: 2em;
+}
+.test{
+  background-color: var(--customgreen1);
+}
+.icon-3{
+  width: 3em;
+  height: 3em;
+}
+
+.style-none{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.style-none:hover{
+  text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
