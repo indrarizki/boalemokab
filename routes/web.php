@@ -32,7 +32,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/welcome', 'VisitorsController@welcome')->name('visitor.ui');
-Route::get('/welcome/test', 'VisitorsController@test')->name('visitor.test.ui');
+
+//ROUTE VISITORS
+Route::get('/daftar-permohonan', 'VisitorsController@view_perizinan')->name('daftar-permohonan');
+
 //ROUTE ADMIN
 Route::get('/admin', 'Admin\AdminController@index')->name('admin.ui');
 
