@@ -8,7 +8,7 @@
   <meta name="author" content="">
 
   <title>DINAS PENANAMAN MODAL DAN ENERGI SUMBER DAYA MINERAL</title>
-  <link rel="icon" href="{{ url('/assets/img/avatars/boalemo.jpg') }}" type="image/x-icon">
+  <link rel="icon" href="{{ url('/assets/img/avatars/boalemo.png') }}" type="image/x-icon">
 
   <!-- Bootstrap core CSS -->
   <link href="{{asset('/assets/visitor/bootstrap.min.css')}}" rel="stylesheet">
@@ -21,10 +21,13 @@
 <body>
   <header class="p-3 bg-custom-green">
     <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-4 pt-1">
+      <div class="col-6 pt-1">
         <a class="text-muted d-flex flex-row style-none" href="#">
-          <img src="{{ url('/assets/img/avatars/boalemo.jpg') }}" class='icon-3' />
-          <h5 class="ml-4 text-white d-none d-md-block">DINAS PENANAMAN MODAL DAN ENERGI SUMBER DAYA MINERAL</h5>
+          <img src="{{ url('/assets/img/avatars/boalemo.png') }}" class='icon-4' />
+          <div class="d-flex flex-column ml-4">
+            <h5 class="text-warning d-none d-md-block">PEMERINTAH KABUPATEN BOALEMO</h5>
+            <h5 class="text-white align-self-center d-none d-md-block">DINAS PENANAMAN MODAL DAN ENERGI SUMBER DAYA MINERAL</h5>
+          </div>
         </a>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center">
@@ -91,16 +94,16 @@
   </div>
   <section class="container">
     <main class='row'>
-        <article class='col col-xs-12 col-md-8'>
-          <h5 class="font-weight-bolder">ARTICLE</h5>
-          <hr/>
-          <img src="{{asset('/assets/home/images/test.jpeg')}}" class="img-thumbnail"/><br/>
-          <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quis voluptate rem ullam a. Quidem iste accusamus dignissimos provident corporis adipisci nulla rem possimus aut, nesciunt maxime, odio facere fugiat?</span>
-        </article>
-        <aside class="col col-xs-12 col-md-4">
+      <article class='col-12 col-md-8'>
+        <h5 class="font-weight-bolder">ARTICLE</h5>
+        <hr />
+        <img src="{{asset('/assets/home/images/test.jpeg')}}" class="img-thumbnail" /><br />
+        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quis voluptate rem ullam a. Quidem iste accusamus dignissimos provident corporis adipisci nulla rem possimus aut, nesciunt maxime, odio facere fugiat?</span>
+      </article>
+      <aside class="col col-xs-12 col-md-4">
         <h5 class="font-weight-bolder">SIDE BAR</h5>
-          <hr/>
-        </aside>
+        <hr />
+      </aside>
     </main>
   </section>
   <!-- Bootstrap core JavaScript

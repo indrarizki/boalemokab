@@ -29,6 +29,11 @@ body{
   height: 3em;
 }
 
+.icon-4{
+  width: 4em;
+  height: 4em;
+}
+
 .style-none{
   text-decoration: none;
   cursor: pointer;
