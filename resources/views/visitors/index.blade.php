@@ -42,8 +42,30 @@
             </div>
           </div>
         </div>
+      </header>
 
-      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="collapse navbar-collapse py-2 mb-2">
+              <ul class="nav d-flex justify-content-center">
+                  <li class="nav-item ">
+                    <a class="nav-link text-muted" href="#">BERANDA<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      TENTANG KAMI
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{{route('visitor.test.ui')}}">SAMBUTAN</a>
+                      <a class="dropdown-item" href="#">VISI MISI</a>
+                      <a class="dropdown-item" href="#">TUGAS DAN FUNGSI</a>
+                      <a class="dropdown-item" href="#">STRUKTUR ORGANISASI</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+              </ul>
+        </div>
+      </nav>
 
       <div class="col-12 col-md-8 mt-3">
         <div class="card border-0 shadow-lg m-0 m-md-2 p-2 h-100">

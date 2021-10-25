@@ -12,62 +12,59 @@
             </li>
             <li class="c-sidebar-nav-item">
                 <a class="c-sidebar-nav-link" href="{{route('admin.information.ui')}}">
-                    <i class="c-sidebar-nav-icon cil-speedometer"></i>Informasi
+                    <i class="c-sidebar-nav-icon cil-info"></i>Informasi
                 </a>
             </li>
             <li class="c-sidebar-nav-item">
                 <a class="c-sidebar-nav-link" href="{{route('admin.permission.ui')}}">
-                    <i class="c-sidebar-nav-icon cil-speedometer"></i>Perizinan
+                    <i class="c-sidebar-nav-icon cil-notes"></i>Perizinan
                 </a>
             </li>
             <li class="c-sidebar-nav-dropdown">
                 <a class="c-sidebar-nav-dropdown-toggle" href="#">
-                    <i class="c-sidebar-nav-icon cil-notes"></i>Laporan
+                    <i class="c-sidebar-nav-icon cil-monitor"></i>Layanan Online
                 </a>
                 <ul class="c-sidebar-nav-dropdown-items">
                     <li class="c-sidebar-nav-item">
                         <a class="c-sidebar-nav-link" href="#">
-                            <i class="c-sidebar-nav-icon cil-clipboard"></i>Pendapatan
+                            <i class="c-sidebar-nav-icon cil-mobile"></i>Pendaftaran Online
                         </a>
                     </li>
                     <li class="c-sidebar-nav-item">
                         <a class="c-sidebar-nav-link" href="#">
-                            <i class="c-sidebar-nav-icon cil-plus"></i>Pemasukan
-                        </a>
-                    </li>
-                    <li class="c-sidebar-nav-item">
-                        <a class="c-sidebar-nav-link" href="#">
-                            <i class="c-sidebar-nav-icon cil-minus"></i>Pengeluaran
-                        </a>
-                    </li>
-                    <li class="c-sidebar-nav-item">
-                        <a class="c-sidebar-nav-link" href="#">
-                            <i class="c-sidebar-nav-icon cil-newspaper"></i>Info Pembayaran
-                        </a>
-                    </li>
-                    <li class="c-sidebar-nav-item">
-                        <a class="c-sidebar-nav-link" href="#">
-                            <i class="c-sidebar-nav-icon cil-newspaper"></i>Info Produk
-                        </a>
-                    </li>
-                    <li class="c-sidebar-nav-item">
-                        <a class="c-sidebar-nav-link" href="#">
-                            <i class="c-sidebar-nav-icon cil-newspaper"></i>Info Penjualan
+                            <i class="c-sidebar-nav-icon cil-mobile"></i>Pengaduan Online
                         </a>
                     </li>
                 </ul>
             </li>
             <li class="c-sidebar-nav-item">
-                <a class="c-sidebar-nav-link" href="#">
-                    <i class="c-sidebar-nav-icon cil-user"></i> Karyawan
+                <a class="c-sidebar-nav-link" href="{{route('admin.news.ui')}}">
+                    <i class="c-sidebar-nav-icon cil-newspaper"></i>Berita
                 </a>
             </li>
             <li class="c-sidebar-nav-item">
-                <a class="c-sidebar-nav-link" href="#">
-                    <i class="c-sidebar-nav-icon cil-storage"></i> Inventory
+                <a class="c-sidebar-nav-link" href="{{route('admin.publication.ui')}}">
+                    <i class="c-sidebar-nav-icon cil-library"></i>Publikasi
+                </a>
+                <ul class="c-sidebar-nav-dropdown-items">
+                    <li class="c-sidebar-nav-item">
+                        <a class="c-sidebar-nav-link" href="#">
+                            <i class="c-sidebar-nav-icon cil-folder"></i>Peraturan
+                        </a>
+                    </li>
+                    <li class="c-sidebar-nav-item">
+                        <a class="c-sidebar-nav-link" href="#">
+                            <i class="c-sidebar-nav-icon cil-folder"></i>Dokumen Perencanaan
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="c-sidebar-nav-item">
+                <a class="c-sidebar-nav-link" href="{{route('admin.gallery.ui')}}">
+                    <i class="c-sidebar-nav-icon cil-image-plus"></i>Galeri Foto
                 </a>
             </li>
-            <li class="c-sidebar-nav-dropdown">
+            {{-- <li class="c-sidebar-nav-dropdown">
                 <a class="c-sidebar-nav-dropdown-toggle" href="#">
                     <i class="c-sidebar-nav-icon cil-settings"></i>Pengaturan
                 </a>
@@ -98,7 +95,7 @@
                         </a>
                     </li>
                 </ul>
-            </li>   
+            </li>    --}}
         </ul>
         
         <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>

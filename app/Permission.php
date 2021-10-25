@@ -21,6 +21,6 @@ class Permission extends Model
 
     public function form_permission()
     {
-        return $this->hasOne(FormPermission::class, 'permission_id');
+        return $this->hasMany(FormPermission::class);
     }
 }
